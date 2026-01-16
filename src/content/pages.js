@@ -1,3 +1,6 @@
+const baseUrl = import.meta.env.BASE_URL;
+const imagePath = (fileName) => `${baseUrl}assets/images/${fileName}`;
+
 export const mainPages = [
   {
     id: "home",
@@ -12,7 +15,7 @@ export const mainPages = [
       "Digital prescriptions + records"
     ],
     cta: "Book an Appointment",
-    image: "/assets/images/home.jpg",
+    image: imagePath("home.jpg"),
     clickable: false
   },
   {
@@ -28,7 +31,7 @@ export const mainPages = [
       "Preventive Health Packages"
     ],
     cta: "Explore Services",
-    image: "/assets/images/services.jpg",
+    image: imagePath("services.jpg"),
     clickable: true
   },
   {
@@ -44,7 +47,7 @@ export const mainPages = [
       "Respect for your time"
     ],
     cta: "See Our Mission",
-    image: "/assets/images/mission.png",
+    image: imagePath("mission.png"),
     clickable: false
   },
   {
@@ -60,7 +63,7 @@ export const mainPages = [
       "Admin & Operations"
     ],
     cta: "View Open Roles",
-    image: "/assets/images/careers.jpg",
+    image: imagePath("careers.jpg"),
     clickable: true
   },
   {
@@ -76,7 +79,7 @@ export const mainPages = [
       "Reports shared back promptly"
     ],
     cta: "Refer a Patient",
-    image: "/assets/images/referrals.jpg",
+    image: imagePath("referrals.jpg"),
     clickable: false
   },
   {
@@ -92,7 +95,7 @@ export const mainPages = [
       "Support timings"
     ],
     cta: "Contact Now",
-    image: "/assets/images/contact.jpg",
+    image: imagePath("contact.jpg"),
     clickable: false
   }
 ];
@@ -105,7 +108,7 @@ export const detailPages = {
       subtitle: "Primary care and specialist consults",
       bullets: ["Walk-in & appointment", "Follow-up plans", "Digital prescriptions"],
       cta: "Book Consult",
-      image: "/assets/images/svc_consult.jpg"
+      image: imagePath("services.jpg")
     },
     {
       id: "svc_imaging",
@@ -113,7 +116,7 @@ export const detailPages = {
       subtitle: "Clear results, fast reporting",
       bullets: ["MRI / CT / X-ray", "Expert radiology review", "Digital reports"],
       cta: "View Diagnostics",
-      image: "/assets/images/svc_imaging.jpg"
+      image: imagePath("extra_1.jpg")
     },
     {
       id: "svc_lab",
@@ -121,7 +124,7 @@ export const detailPages = {
       subtitle: "In-house sampling & trusted partners",
       bullets: ["Routine bloodwork", "Health panels", "Fast turnaround"],
       cta: "Book Lab Test",
-      image: "/assets/images/svc_lab.jpg"
+      image: imagePath("extra_2.jpg")
     },
     {
       id: "svc_prevent",
@@ -129,7 +132,7 @@ export const detailPages = {
       subtitle: "Catch issues early",
       bullets: ["Annual checkups", "Lifestyle screenings", "Custom packages"],
       cta: "See Packages",
-      image: "/assets/images/svc_prevent.jpg"
+      image: imagePath("extra_3.jpg")
     },
     {
       id: "svc_pharmacy",
@@ -137,7 +140,7 @@ export const detailPages = {
       subtitle: "Simple medication flow",
       bullets: ["E-prescriptions", "Refill reminders", "Guidance & counseling"],
       cta: "Get Support",
-      image: "/assets/images/svc_pharmacy.jpg"
+      image: imagePath("extra_4.jpg")
     },
     {
       id: "svc_homecare",
@@ -145,7 +148,7 @@ export const detailPages = {
       subtitle: "Care where you are",
       bullets: ["Nursing visits", "Physio support", "Post-op follow-ups"],
       cta: "Request Home Care",
-      image: "/assets/images/svc_homecare.jpg"
+      image: imagePath("home.jpg")
     }
   ],
   careers: [
@@ -155,7 +158,7 @@ export const detailPages = {
       subtitle: "Build your practice with support",
       bullets: ["Flexible schedules", "Modern diagnostics", "Collaborative teams"],
       cta: "Apply Now",
-      image: "/assets/images/car_doctors.jpg"
+      image: imagePath("careers.jpg")
     },
     {
       id: "car_nursing",
@@ -163,7 +166,7 @@ export const detailPages = {
       subtitle: "Patient-first nursing culture",
       bullets: ["Clear SOPs", "Respectful workplace", "Growth paths"],
       cta: "Apply Now",
-      image: "/assets/images/car_nursing.jpg"
+      image: imagePath("extra_1.jpg")
     },
     {
       id: "car_admin",
@@ -171,7 +174,7 @@ export const detailPages = {
       subtitle: "Run smooth patient experiences",
       bullets: ["Patient coordination", "Billing support", "Operations help"],
       cta: "Apply Now",
-      image: "/assets/images/car_admin.jpg"
+      image: imagePath("extra_2.jpg")
     },
     {
       id: "car_labtech",
@@ -179,7 +182,7 @@ export const detailPages = {
       subtitle: "Quality testing, real impact",
       bullets: ["Process discipline", "Accuracy focus", "Team support"],
       cta: "Apply Now",
-      image: "/assets/images/car_labtech.jpg"
+      image: imagePath("extra_3.jpg")
     },
     {
       id: "car_radiology",
@@ -187,7 +190,7 @@ export const detailPages = {
       subtitle: "Work with modern imaging",
       bullets: ["Safety standards", "Fast workflows", "Expert supervision"],
       cta: "Apply Now",
-      image: "/assets/images/car_radiology.jpg"
+      image: imagePath("extra_4.jpg")
     },
     {
       id: "car_intern",
@@ -195,7 +198,7 @@ export const detailPages = {
       subtitle: "Learn in a calm, high-standard clinic",
       bullets: ["Mentorship", "Hands-on exposure", "Clear evaluation"],
       cta: "Apply Now",
-      image: "/assets/images/car_intern.jpg"
+      image: imagePath("mission.png")
     }
   ]
 };
